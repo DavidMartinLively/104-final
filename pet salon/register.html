@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Pet Salon</title>
+</head>
+<body>
+    <header class="container">
+        <h1 class="display-1">The Fashion Pet</h1>
+
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="register.html">Register</a>
+        </li>
+    </ul>
+    <!--<h1 class="display-1">The Fashion Pet</h1>-->
+    </header>
+  <main class="container">
+    <input type  = "search" id="searchInput" placeholder="Search for a Pet" />
+    <button onclick="searchPet();">Search</button>
+    <div id="petList">
+
+    </div>
+    <h2>Register a pet</h2>
+    <!-- here we will add the input field-->
+    <!-- pets cards/ table tables-->
+    <p id="numberOfPets" class="alert alert-dark">Display the number of pets</p>
+<div>
+  <div>
+    <label class="form-label">Name:</label>
+    <input class="form-control" type="text" placeholder="Enter pets name" id="txtName">
+  </div>
+  <div>
+    <label>Age:</label>
+    <input class="form-control" type="number" id="txtAge">
+  </div>
+  <div>
+    <label>Gender:</label>
+    <input class="form-control" type="text" id="txtGender">
+  </div>
+  <div>
+    <label>Breed:</label>
+    <input class="form-control" type="text" id="txtBreed">
+  </div>
+  <div>
+    <label>Owner:</label>
+    <input class="form-control" type="text" id="txtOwner">
+  </div>
+  <div>
+    <label>Phone:</label>
+    <input class="form-control" type="tel" id="txtPhone">
+  </div>
+  <div>
+    <label>Service:</label>
+    <select class="form-select" id="selService">
+      <option value="" selected> --- Select an option ---</option>
+      <option value="grooming">Grooming </option>
+      <option value="vaccination">Vaccination</option>
+      <option value="nails treeming">Nails triming</option>
+      <option value="deep shampoo treatment">Deep shampoo treatment</option>
+      <option value="fleas treatment">Fleas treatment</option>
+    </select>
+  </div>
+</div>
+
+<button class="btn btn-dark" onclick="register();">Register</button>
+  
+<div>
+  <div id="pets">
+
+  </div>
+  <table id="petsTable" class="table table-bordered">
+    <thead class="table-org">
+      <!--add the headers-->
+      <tr>
+          <th scope="col"> Name </th>
+          <th scope="col"> Age </th>
+          <th scope="col"> Gender </th>
+          <th scope="col"> Breed </th>
+          <th scope="col"> Service </th>
+          <th scope="col"> Owner's name</th>
+          <th scope="col"> Contact info</th>
+          
+      </tr>
+    </thead>
+    <tbody id="tbody">
+      <!--add the pets-->
+        
+      </table>
+    </tbody>
+</table>
+
+
+<!-- <form id="petInfo"> 
+  <input type="text" id="txtPetName" placeholder="Pet's Name" /> <br>
+  <input type="number" id="nbAge" min="0" placeholder="Pet's Age" /> <br>
+  <input type="gender" id="dlGender" placeholder="Select Gender" /> <br>
+
+  <datalist id="">
+<option value="Maine Coon">
+<option value="Siemese">
+<option value="American Bobtail">
+<option value="Ragdoll">
+  </datalist>
+    <input id="services" list="dlServices" placeholder="Select Servise"> <br>
+<datalist id="dlServices">
+  <option value="Grooming">
+  <option value="Teeth Cleaning">
+  <option value="Deep shampoo treatment">
+  <option value="Vaccination">
+</datalist>
+<input type="text" id="txtOwnerName" placeholder="Owner Name"> <br>
+<input class="tel-owner" type="tel" id="telOwner" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+<input type="button" value="Add" onclick=getInfo()>
+</form>
+
+
+<button onclick="showAlert()">Registered Pets</button> -->
+</main>
+ <footer class = "container" id ="footer-info">
+    <p>All Rights Reserved & copy 2022</p>
+    <p id="info"></p>
+  </footer> 
+  <script src="register.js"></script>
+  <script src="display.js"></script>
+</body>
+</html>
